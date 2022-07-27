@@ -1,47 +1,13 @@
-let arr = [0,1,2,3];
-alert('massive arr: ' + arr)
-function funcShift() {
-    let brr = [];
-    for (let i = 0; i < arr.length; i++) {
-       brr[i-1] = arr[i]
+
+let a = parseInt(prompt('Введіть ділене'))
+let b = parseInt(prompt('Введіть дільник'))
+
+function quotient(a, b) {
+    if (a < b) {
+        return alert('Емм, так ми не порахуємо остачу')
+    } else {
+        return (a-(a%b))/b;
     }
-    return brr;
 }
-alert('у початкового пасиву видалили пеший елемент: ' + funcShift())
 
-
-// let arr = [0,1,2,3];
-// alert('massive arr: ' + arr)
-// function funcUnshift() {
-//     let brr = [];
-//     for (let i = -1; i < arr.length; i++) {
-//        brr[i+1] = arr[i]
-//     }
-//     return brr;
-// }
-// alert('перед першим елементом виникає ще один: ' + funcUnshift())
-
-
-
-// let arr = [0,1,2,3];
-// alert('massive arr: ' + arr)
-// function funcPop() {
-//     let brr = [];
-//     for (let i = 0; i < arr.length; i++) {
-//        brr[i] = arr[i-1]
-//     }
-//     return brr;
-// }
-// alert('у початкового пасиву видалили останній елемент: ' + funcPop())
-
-
-// let arr = [0,1,2,3];
-// alert('massive arr: ' + arr)
-// function funcPush() {
-//     let brr = [];
-//     for (let i = 0; i < arr.length; i++) {
-//        brr[i] = arr[i+1]
-//     }
-//     return brr;
-// }
-// alert('до початкового пасиву додали елемент в кінець: ' + funcPush())
+alert( 'Неповна частка від ділення = ' + quotient(a,b) + ' (' + `${a}` + ' при цілочисельному діленні на ' + `${b}` + ')' )
