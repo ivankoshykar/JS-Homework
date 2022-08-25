@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: aliceblue;
+}
+
+.active {
+    background-color: aquamarine;
+}
+
+.disabled {
+    background-color: gray;
+    cursor: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+p {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.box {
+    width: 300px;
+}
+
+.highlight {
+    border: 5px solid red;
+}
+
+.promo {
+    background-image: url('./images/vc.jpg');
+}
+
+.wrapper {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
