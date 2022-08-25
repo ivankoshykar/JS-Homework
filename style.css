@@ -1,0 +1,21 @@
+.active {
+    background-color: aquamarine;
+}
+
+.disabled {
+    background-color: gray;
+    cursor: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+    width: 300px;
+}
+
+.highlight {
+    border: 5px solid red;
+}
